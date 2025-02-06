@@ -1,22 +1,15 @@
 import './styles.css';
+import { createHome } from './pages/home';
+import { createMenu } from './pages/menu';
+
+
+createHome();
+
+const buttonHome = document.querySelector('#homeB');
+const buttonMenu = document.querySelector('#menuB');
+// const buttonAbout = document.querySelector('#aboutB');
+
+buttonHome.addEventListener('click', () => createHome());
+buttonMenu.addEventListener('click', () => createMenu());
 
 console.log('Bravo ba!');
-
-const divContent = document.querySelector('#content');
-divContent.classList.add('home-page')
-const title = document.createElement('h1');
-title.textContent = 'SIT AND EAT';
-
-
-const messageContainer = document.createElement('div');
-messageContainer.classList.add('message-box');
-messageContainer.appendChild(title);
-divContent.appendChild(messageContainer);
-const message = ['enjoy','the moment', 'the food', 'the people'];
-
-message.forEach((item,index)=>{
-    const messageP=document.createElement('p');
-    messageP.classList.add(`p${index}`);
-    messageP.textContent=item;
-    messageContainer.appendChild(messageP);
-})
