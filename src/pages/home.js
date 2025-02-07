@@ -1,6 +1,7 @@
 function createHome() {
 	const divContent = document.querySelector('#content');
     divContent.textContent = '';
+	divContent.classList.remove('menu-page');
 	divContent.classList.add('home-page');
 	const title = document.createElement('h1');
 	title.textContent = 'SIT AND EAT';
@@ -11,6 +12,7 @@ function createHome() {
 	divContent.appendChild(messageContainer);
 	const message = ['enjoy', 'the moment', 'the food', 'the people'];
 
+    // generate each paragraph with the text from the array
 	message.forEach((item, index) => {
 		const messageP = document.createElement('p');
 		messageP.classList.add(`p${index}`);
