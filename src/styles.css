@@ -58,7 +58,6 @@ header {
 	align-items: center;
     justify-content: center;
 	flex-direction: column;
-	text-align: left;
 }
 .message-box {
 	position: relative;
