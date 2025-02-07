@@ -8,6 +8,7 @@ function loadPage(createPageFunction) {
 	clearDOM();
 	createPageFunction();
 }
+
 createHome();
 
 const buttonHome = document.querySelector('#homeB');

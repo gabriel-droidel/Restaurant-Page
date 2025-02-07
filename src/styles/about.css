@@ -1,0 +1,10 @@
+.about-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    padding:40px;
+    font-style: italic;
+    font-weight: bold;
+    color:#4f1d0b;
+}
